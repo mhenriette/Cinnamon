@@ -1,26 +1,51 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+  
+
+@font-face {
+  font-family: 'Mont';
+  src: local('Mont'),url('/fonts/MontRegular.woff2') format('woff2'),url('/fonts/MontRegular.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'MontSemiBold';
+  src: local('MontBold'),url('/fonts/MontSemiBold.woff2') format('woff2'),url('/fonts/MontSemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'MontBold';
+  src: local('MontHeavy'),url('/fonts/MontBold.woff2') format('woff2'),url('/fonts/MontBold.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: 'MontHeavy';
+  src: local('MontHeavy'),url('/fonts/MontHeavy.woff2') format('woff2'),url('/fonts/MontHeavy.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+.address{
+  @apply mt-8 text-lightgray
+}
+.address__country{
+  @apply text-white font-MontBold text-smallx leading-middle 
+}
+.address__location{
+  @apply text-[14px] leading-6 font-sans
+}
+.media{
+  @apply py-6 px-3
+}
+
 }
