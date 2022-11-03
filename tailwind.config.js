@@ -17,7 +17,8 @@ module.exports = {
         gray32:'#525252',
         thumborange:'#ffcb49',
         blackopacity:'#131313',
-        bluegradient:'#5135ff1a' 
+        bluegradient:'#5135ff1a' ,
+        lightblue:'#5236ff'
 
       },
       fontSize:{

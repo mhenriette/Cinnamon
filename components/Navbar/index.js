@@ -1,8 +1,47 @@
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Button from "../ui/Button";
+
 function Navbar(){
+
+    const [scroll, setScroll] =useState(false)
+
+    function scrolling(){
+        if(window.scrollY>10){
+            setScroll(true)
+        }else{
+            setScroll(false)
+        }
+    }
+    useEffect(()=>{
+        window.addEventListener('scroll', scrolling)
+    },[])
+
+    
+
     return (
-        <header className=" bg-black flex justify-between px-6 py-6 items-center">
-            <div className="w-40 h-5"><img src="/logo-white.svg" alt="logo-white"/></div>
-            <div className="w-8 h-8"><img src="/mobilemenu-white.svg" alt="mobile-menu" /></div>
+        <header className={` z-50 px-6 py-6  fixed w-full ${scroll? 'bg-white':'bg-transparent' }`}>
+            <div className=" flex justify-between items-center md:mx-auto container md:px-12">
+            <div className="w-40 h-5"><img src= {!scroll? '/logo-white.97f0c2c8.svg':'/logodark.svg'}  alt="logo-white"/></div>
+            <div className="md:flex gap-5 items-center hidden">
+            <nav className={` text-white gap-5 md:flex items-start text-smallx font-sans hidden ${!scroll?'text-white':'text-black'} `}>
+                            <Link href='/'>Home</Link>
+                            <Link href='/Projects'>Projects</Link>
+                            <Link href='/Services'>Services</Link>
+                            <Link href='/About'>About Us</Link>
+                            <Link href='/Careers'>Careers</Link>
+                            <Link href='/Blog'>Blog</Link>
+            </nav>
+            <div className="rounded-full w-10 h-10 flex items-center justify-center border-2 border-white"><img src="/play.svg"/></div>
+            <Button title='Contact Us' style=''/>
+            </div>
+
+        
+         
+            <div className={`w-8 h-8 md:hidden ${scroll? 'hidden':'flex'}`}><img src="/mobilemenu-white.svg" alt="mobile-menu" /></div>
+            <div className={`w-8 h-8 md:hidden ${scroll? 'flex':'hidden'}`}><img src="/menudark.svg" alt="mobile-menu" /></div>
+         
+            </div>
         </header>
     );
 }
