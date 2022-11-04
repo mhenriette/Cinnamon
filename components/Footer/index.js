@@ -72,7 +72,7 @@ function Footer(){
 
                                         </div>
                                         <div className="my-5">
-                                        <Button title='Subscribe'/>
+                                        <Button title='Subscribe' style='px-10 my-10'/>
                                         </div>
                                     </form>
                                 </div>

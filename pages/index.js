@@ -47,7 +47,7 @@ export default function Home() {
               <ServiceCard title='Development' subtitle='By selecting the befitting tech stack and architecture for the deliverable in question, we build out the product until its a fully-fledged digital solution.' url='dev.png'/>
               <ServiceCard title='Quality assurance' subtitle='Our QA engineering team makes your product bug-free, bulletproof and performance-driven through both automatic and manual testing.' url='/quality.png' />
               <ServiceCard title='Marketing & growth' subtitle='By understanding the mechanics of digital marketing, we make sure to put your product, at the right time, in front of the right people.' url='marketing.png' />
-              <Button title={"see Our Services"} />
+              <Button title={"See Our Services"} style='my-10 max-w-auto px-10'/>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function Home() {
                     scalable in both directions.
                   </p>
                
-                <Button title="See How It Works" />
+                <Button title="See How It Works" style='px-10 my-10' />
                 </div>
                 
             </div>
@@ -155,7 +155,7 @@ export default function Home() {
               <div className="list-items">Fluffy friends</div>
             </div>
             <div className="w-72 mb-6 mt-8 md:hidden"><img src="man.png" alt="man"/></div>
-            <Button title='Read About Us'/>
+            <Button title='Read About Us' style='px-10 my-10'/>
     
           </div>
           </div>
@@ -174,7 +174,7 @@ export default function Home() {
               Seize the unique opportunity to participate in a wide range of courses conducted by professionals with an impeccable reputation in the digital industry.
               </p>
       
-            <Button title='See How it works'/>
+            <Button title='See How it works' style='px-10 my-10'/>
           </div>
          
 
@@ -189,7 +189,7 @@ export default function Home() {
           <div>
           <h1 className="font-MontBold text-4xl md:text-large  leading-medium text-white mb-4">We’re growing</h1>
           <p className="font-sans text-lg leading-middle text-[#CFCFCF] mb-4">Jump on board with Cinnamon and get the privilege of <br className="hidden md:flex"/>  working on challenging projects for leading global <br className="hidden md:flex"/> companies! Make the world a better, more connected <br className="hidden md:flex"/> place.</p>
-          <Button title='See All Positions'/>
+          <Button title='See All Positions' style='px-10 my-10'/>
           </div>
                 {/* arrows */}
           <div className="pt-6 md:pt-0">
@@ -280,7 +280,7 @@ export default function Home() {
                     <div className="py-24 flex flex-col items-center text-center relative gap-5">
                       <h1 className="font-MontBold leading-[56px]  text-[54px] hidden md:flex">Have a project in mind?</h1>
                       <h2 className="font-MontBold leading-[56px] text-4xl md:text-[54px] ">Let's Work Together</h2>
-                      <Button title='Contact Us'/>
+                      <Button title='Contact Us' style='px-10 my-10'/>
 
                     </div>
 
